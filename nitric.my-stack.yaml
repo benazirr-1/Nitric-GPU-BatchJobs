@@ -1,0 +1,2 @@
+provider: nitric/aws@latest
+region: us-east-1

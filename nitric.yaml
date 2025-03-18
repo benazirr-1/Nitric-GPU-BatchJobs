@@ -1,0 +1,17 @@
+preview:
+  - batch-services
+  
+batch-services:
+	  - match: index.ts
+
+resources:
+			buckets:
+		    images:
+		      type: bucket
+
+jobs:
+				resize-images:
+					compute:
+						type: batch 
+					gpu:
+						type: nvidia  # Generic type, will be mapped to nvidia-tesla-t4 if on AWS
